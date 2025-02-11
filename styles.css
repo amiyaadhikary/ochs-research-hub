@@ -1,0 +1,340 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 20px;
+}
+
+/* Profile Container */
+.container {
+  display: flex;
+  align-items: center;
+  width: 960px;
+  /* background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 10px; */
+  /* padding: 30px; */
+  flex-direction: row; /* Image on the left */
+}
+
+a {
+  color: #1772d0;
+}
+
+.info {
+  flex: 1;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.info .name {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.info .bio {
+  font-size: 16.25px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.info .links a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.info .links a:hover {
+  text-decoration: underline;
+}
+
+.profile-img {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* News Section */
+.news-section {
+  width: 960px;
+  padding-left: 0px;
+  padding-top: 20px;
+
+  /* background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.news-section h2 {
+  font-size: 23px;
+  margin-bottom: 14px;
+}
+
+.news-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.news-list li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Research Section*/
+.research-section {
+  width: 960px;
+  margin-top: 15px;
+  padding-left: 0px;
+}
+
+.research-section h2 {
+  margin-bottom: 6px;
+}
+
+.card {
+  display: flex;
+  width: 960px;
+  background-color: #f1f1e7;
+  margin-top: 15px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  width: 200px;
+  height: auto;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+.card-content {
+  flex: 1;
+}
+.card-content a {
+  color: #0073e6;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.card-content a:hover {
+  text-decoration: underline;
+}
+.authors {
+  font-weight: bold;
+  font-size: 12.85px;
+}
+.meta {
+  font-style: italic;
+  color: #666;
+}
+.links a {
+  color: #0073e6;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+
+/*Speeech Section*/
+/* Invited Talks Section */
+.speech-section {
+  padding: 15px 0;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-size: 22px;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #3498db;
+  display: inline-block;
+}
+
+.talk-card {
+  display: flex;
+  gap: 2rem;
+  background: white;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  padding: 13.5px;
+  transition: transform 0.3s ease;
+}
+
+/* .talk-card:hover {
+  transform: translateY(-5px);
+} */
+
+.talk-image {
+  position: relative;
+  flex: 0 0 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hover-zoom {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+/* 
+.talk-image:hover .hover-zoom {
+  transform: scale(1.05);
+} */
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.talk-image:hover .image-overlay {
+  opacity: 1;
+}
+
+.talk-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.talk-content li {
+  list-style: none;
+  margin-bottom: 7px;
+}
+
+.talk-title {
+  font-size: 20px;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.talk-title:hover {
+  color: #3498db;
+}
+
+.talk-meta {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.talk-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.institution {
+  color: #27ae60;
+}
+.host {
+  color: #8e44ad;
+}
+.year {
+  color: #c0392b;
+}
+
+.slide-link {
+  align-self: flex-start;
+  padding: 7px;
+  /* background: #3498db; */
+  color: rgb(141, 110, 110) !important;
+  border: 1px solid;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: background 0.3s ease;
+}
+
+/* .slide-link:hover {
+  background: #2980b9;
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .talk-card {
+    flex-direction: column;
+  }
+
+  .talk-image {
+    flex: none;
+    width: 100%;
+  }
+
+  .hover-zoom {
+    height: auto;
+  }
+
+  .talk-meta {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
+/* Academic Section */
+.academic-section {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.academic-section p {
+  margin-left: 25px;
+}
+
+.academic-section h2 {
+  color: #222;
+}
+
+.academic-section li {
+  margin-left: 8px;
+  list-style: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+.academic-section a {
+  color: #007bff;
+  text-decoration: none;
+}
+.academic-section a:hover {
+  text-decoration: underline;
+}
+
+/*Footer Section*/
+.footer {
+  border-top: 2px solid #ccc; /* Creates a line at the top */
+  text-align: center;
+  padding: 1rem;
+  background-color: #f8f8f8; /* Optional: Adjust background color */
+  color: #333; /* Optional: Adjust text color */
+}
